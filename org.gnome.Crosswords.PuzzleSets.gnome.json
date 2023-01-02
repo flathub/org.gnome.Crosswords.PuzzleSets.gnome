@@ -19,7 +19,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/jrb/puzzle-sets-gnome.git",
-                    "commit": "7c4ff0e52b85dda0e67198b7b0eb67ad0661d831"
+                    "commit": "4c6f0d45745a7535f73e1923cd4f49f45c703c4c"
                 }
             ],
             "post-install": [
