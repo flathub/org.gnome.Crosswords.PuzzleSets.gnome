@@ -3,7 +3,7 @@
     "runtime": "org.gnome.Crosswords",
     "runtime-version": "stable",
     "branch": "1",
-    "sdk" : "org.gnome.Sdk//44",
+    "sdk" : "org.gnome.Sdk//48",
     "build-extension": true,
     "separate-locales": false,
     "appstream-compose": false,
@@ -19,12 +19,12 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/jrb/puzzle-sets-gnome.git",
-                    "tag": "0.4.3"
+                    "tag": "0.4.4"
                 }
             ],
             "post-install": [
                 "install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo ../org.gnome.Crosswords.PuzzleSets.gnome.metainfo.xml",
-                "appstream-compose --basename=org.gnome.Crosswords.PuzzleSets.gnome --prefix=${FLATPAK_DEST} --origin=flatpak org.gnome.Crosswords.PuzzleSets.gnome"
+                "appstreamcli compose --components=org.gnome.Crosswords.PuzzleSets.gnome --prefix=/ --origin=org.gnome.Crosswords.PuzzleSets.gnome --result-root=${FLATPAK_DEST} --data-dir=share/app-info/xmls ${FLATPAK_DEST}"
             ]
         }
     ]
