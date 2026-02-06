@@ -3,7 +3,7 @@
     "runtime": "org.gnome.Crosswords",
     "runtime-version": "stable",
     "branch": "1",
-    "sdk" : "org.gnome.Sdk//44",
+    "sdk" : "org.gnome.Sdk//48",
     "build-extension": true,
     "separate-locales": false,
     "appstream-compose": false,
@@ -19,7 +19,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/jrb/puzzle-sets-gnome.git",
-                    "tag": "0.4.3"
+                    "tag": "0.4.4"
                 }
             ],
             "post-install": [
